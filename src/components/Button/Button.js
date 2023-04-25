@@ -4,11 +4,11 @@ import propTypes from 'prop-types';
 
 export class Button extends Component {
   render() {
-    const { callback, text, type } = this.props;
+    const { onClick, name, type } = this.props;
     return (
       <>
-        <button className={css.Button} type={type} onClick={callback}>
-          {text === 'true' && 'Load more'}
+        <button className={css.Button} type={type} onClick={onClick}>
+          {name}
         </button>
       </>
     );
